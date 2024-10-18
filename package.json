@@ -1,0 +1,57 @@
+{
+    "name": "fifo-hooks",
+    "version": "1.0.12",
+    "description": "react hooks by fifo",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "exports": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+    },
+    "scripts": {
+        "test": "jest",
+        "build": "tsup src/index.ts",
+        "start": "pnpm build --watch",
+        "release": "rm -rf dist && npm run build && npm publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fifo2024/hooks.git"
+    },
+    "keywords": [
+        "react",
+        "hooks",
+        "fifo",
+        "jest"
+    ],
+    "author": "zhaoyadong",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fifo2024/hooks/issues"
+    },
+    "homepage": "https://github.com/fifo2024/hooks#readme",
+    "devDependencies": {
+        "@testing-library/react": "^16.0.1",
+        "@testing-library/react-hooks": "^8.0.1",
+        "@types/jest": "^29.5.13",
+        "@types/node": "^22.7.6",
+        "jest": "^29.7.0",
+        "jest-environment-jsdom": "^29.7.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-test-renderer": "^18.3.1",
+        "ts-jest": "^29.2.5",
+        "ts-node": "^10.9.2",
+        "tslib": "^2.8.0",
+        "tsup": "^8.3.0",
+        "typescript": "^5.6.3"
+    },
+    "peerDependencies": {
+        "react": ">=18.2.0",
+        "react-dom": ">=18.2.0"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    }
+}
